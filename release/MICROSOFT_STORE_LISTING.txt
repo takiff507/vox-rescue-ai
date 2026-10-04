@@ -1,0 +1,71 @@
+VOX RESCUE — MICROSOFT STORE LISTING DRAFT
+=======================================
+PRODUCT NAME
+Vox Rescue AI
+
+PRICE
+Free (price 0). No subscription or account required for core processing.
+
+SHORT DESCRIPTION
+Real-time AI microphone clarity for Windows calls, games, streams and recordings.
+
+DESCRIPTION
+Sending enhanced microphone audio to other apps requires standard VB-CABLE,
+a separately installed third-party virtual audio driver by VB-Audio Software.
+VB-CABLE is donationware and is not included with Vox Rescue.
+
+Vox Rescue reduces microphone background noise while preserving natural
+speech. Choose your microphone, enable AI enhancement, and use the resulting
+input in compatible Windows communication, gaming and recording applications.
+
+- Compact white interface
+- Real-time voice clarity processing
+- Independent headphone return for checking your voice
+- Background notification-area operation
+- Included introduction and microphone setup guide
+- No account required or microphone upload for AI processing
+
+Headphone return works without a virtual audio driver. Routing to another
+application requires a compatible virtual audio endpoint and a running Vox
+Rescue app. Use CABLE Output as the receiving app's microphone, and your real
+headphones for its speaker. Compatibility varies by receiving app and hardware.
+
+Official driver download: https://vb-audio.com/Cable/
+Licensing/donations: https://vb-audio.com/Services/licensing.htm
+
+SYSTEM REQUIREMENTS
+64-bit Windows 10 or 11; physical microphone; headphones recommended.
+For microphone routing to other apps: standard VB-CABLE installed separately.
+
+CERTIFICATION NOTES — COMPLETE BEFORE SUBMISSION
+The package does not install, modify or redistribute a kernel driver.
+Other-app routing depends on standard VB-CABLE by VB-Audio Software.
+The app's "Setup & guide" button opens its bundled offline guide. That guide
+discloses the driver dependency and links to the publisher's official website.
+The user installs the driver independently and restarts Windows.
+Without that route, the app can still enhance audio for headphone return.
+
+POLICY REVIEW STATUS (CHECKED 2026-10-04)
+Microsoft Store policy 10.2.4 requires non-integrated dependencies to be
+disclosed at the beginning of the listing description. Non-Microsoft driver
+dependencies are generally not permitted; WHCP-certified drivers may be
+considered case by case, and dependencies must be disclosed in certification
+notes. No WHCP eligibility or Microsoft exception has been verified for this
+configuration. Do not claim certification readiness or approval.
+Resolve eligibility with Microsoft before submitting this driver-dependent
+configuration. A wording change does not remove the underlying dependency.
+
+Policy 7.19 (currently effective):
+https://learn.microsoft.com/en-us/windows/apps/publish/store-policy-archive/store-policy-7-19#102-security
+Policy 7.20 (effective 2026-10-22; same 10.2.4 driver requirements):
+https://learn.microsoft.com/en-us/windows/apps/publish/store-policies#102-security
+
+PRIVACY
+The app processes the selected microphone on the user's PC and does not
+record conversations during normal operation. The receiving application has
+its own privacy practices. Publish the website's privacy page and use its
+public HTTPS address in Partner Center before submission.
+
+PUBLICATION STATUS
+Draft only. App registration, identity, publisher details, policy eligibility
+review and certification are pending. No submission has been made.

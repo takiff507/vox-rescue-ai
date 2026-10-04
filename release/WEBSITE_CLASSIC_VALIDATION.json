@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-04",
+  "reference": "https://clownfish-translator.com/voicechanger/",
+  "accent": "#6550ad",
+  "html_pages_validated": 7,
+  "local_links_and_assets_passed": true,
+  "desktop_visual_check_passed": true,
+  "mobile_viewport_width": 390,
+  "mobile_horizontal_overflow": false,
+  "mobile_menu_and_download_navigation_passed": true,
+  "support_email": "hello@ksnxrl.dev",
+  "contact_draft_unicode_and_encoding_passed": true,
+  "contact_email_sent": false,
+  "canvas_elements": 0,
+  "desktop_software_modified": false,
+  "website_zip_integrity_and_source_match_passed": true,
+  "website_zip_sha256": "692ecbe4dcc6716ed87b8bb92b38d6c3b91d6c3384aa3a416a62788311ac2f34"
+}

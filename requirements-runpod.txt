@@ -1,0 +1,7 @@
+# Install these only inside the later RunPod environment. Nothing is installed
+# by the local setup, and no dataset is downloaded by this file.
+numpy>=1.24
+soundfile>=0.12
+torch>=2.2
+tqdm>=4.66
+

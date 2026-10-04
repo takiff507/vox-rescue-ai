@@ -1,0 +1,25 @@
+<Window
+    x:Class="VoxRescueNative.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Window.SystemBackdrop><DesktopAcrylicBackdrop/></Window.SystemBackdrop>
+    <Grid RequestedTheme="Light" Padding="16">
+      <Grid.Background><SolidColorBrush Color="#DDF6F8F8"/></Grid.Background>
+      <StackPanel Spacing="12">
+        <Grid>
+          <StackPanel><TextBlock Text="Vox Rescue" FontSize="20" FontWeight="SemiBold"/><TextBlock Text="LOCAL VOICE CLARITY" FontSize="9" Foreground="{StaticResource SecondaryTextBrush}"/></StackPanel>
+          <Border HorizontalAlignment="Right" VerticalAlignment="Top" Background="#18177C6B" Padding="10,7" CornerRadius="12"><TextBlock x:Name="EngineStateText" Text="LOADING" Foreground="{StaticResource AccentBrush}" FontSize="10"/></Border>
+        </Grid>
+
+        <Border Style="{StaticResource CardStyle}">
+          <StackPanel Spacing="13">
+            <TextBlock Text="VOICE CONTROLS" FontSize="10" Foreground="{StaticResource AccentBrush}"/>
+            <Grid><StackPanel><TextBlock Text="Keep your natural voice" FontSize="13" FontWeight="SemiBold"/><TextBlock x:Name="ProtectionStatus" Text="Preparing protected engine" FontSize="11" Foreground="{StaticResource SecondaryTextBrush}" TextWrapping="Wrap" MaxWidth="210"/></StackPanel><ToggleSwitch x:Name="MainSwitch" HorizontalAlignment="Right" IsEnabled="False" Toggled="OnMainSwitchToggled" AutomationProperties.Name="AI enhancement"/></Grid>
+            <Grid><StackPanel><TextBlock Text="Hear my return" FontSize="13"/><TextBlock Text="Listen through headphones" FontSize="11" Foreground="{StaticResource SecondaryTextBrush}"/></StackPanel><ToggleSwitch x:Name="ReturnSwitch" HorizontalAlignment="Right" Toggled="OnReturnToggled" AutomationProperties.Name="Hear my return"/></Grid>
+          </StackPanel>
+        </Border>
+        <Border Style="{StaticResource CardStyle}"><StackPanel Spacing="10"><TextBlock Text="AUDIO ROUTING" FontSize="10" Foreground="{StaticResource SecondaryTextBrush}"/><TextBlock x:Name="DeviceText" Text="Detecting microphone…" FontSize="12" TextWrapping="Wrap"/><TextBlock x:Name="RouteText" Text="Checking virtual microphone…" FontSize="11" TextWrapping="Wrap" Foreground="{StaticResource AccentBrush}"/><Button Content="Refresh devices" Click="OnRefreshClicked" HorizontalAlignment="Stretch"/></StackPanel></Border>
+        <StackPanel Spacing="8"><TextBlock x:Name="ModelStepText" Text="LIVE OUTPUT" FontSize="10" Foreground="{StaticResource SecondaryTextBrush}"/><ProgressBar x:Name="InputMeter" Minimum="0" Maximum="100" Height="6" Foreground="{StaticResource AccentBrush}"/><TextBlock x:Name="LatencyText" Text="48 kHz · local processing · free" FontSize="10" Foreground="{StaticResource SecondaryTextBrush}"/></StackPanel>
+      </StackPanel>
+    </Grid>
+</Window>

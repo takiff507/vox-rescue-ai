@@ -1,0 +1,37 @@
+# No dataset is downloaded by this project. Set data_root only when a dataset
+# is available locally or mounted on RunPod.
+data_root = "data"
+manifest_path = "manifests/audio_manifest.csv"
+
+[audio]
+sample_rate = 16000
+channels = 1
+chunk_ms = 20
+hop_ms = 10
+n_fft = 512
+win_length = 512
+
+[model]
+hidden_size = 192
+max_gain = 1.25
+
+[safety]
+# Refuse to start a job if the target filesystem has less free space than this.
+minimum_free_gb = 5.0
+# Keep frequent checkpoints so an interrupted job can resume.
+checkpoint_every_steps = 500
+# A smoke test must finish before any long training command is allowed.
+smoke_test_required = true
+
+[training]
+stage = "smoke"
+max_steps = 20
+batch_size = 64
+num_workers = 12
+pin_memory = true
+prefetch_factor = 4
+persistent_workers = true
+segment_seconds = 2.0
+learning_rate = 0.0003
+mixed_precision = true
+pair_manifest = "manifests/pairs.csv"

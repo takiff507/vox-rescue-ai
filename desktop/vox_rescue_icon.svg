@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Vox Rescue</title>
+  <desc id="description">A white rescue shield with a clear voice waveform on an indigo-blue rounded square.</desc>
+  <defs>
+    <linearGradient id="surface" x1="128" y1="96" x2="896" y2="928" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6D5DFB"/>
+      <stop offset="0.5" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="330" y1="392" x2="704" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#0F73E8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(310 220) rotate(45) scale(760)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="0.68" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="170" y="140" width="684" height="810" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#172554" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#surface)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#glow)"/>
+  <path d="M98 324C226 158 414 92 620 108C747 118 858 163 926 230V138C926 88 886 48 836 48H272C176 48 98 126 98 222V324Z" fill="#FFFFFF" opacity="0.08"/>
+
+  <path
+    d="M512 188C600 244 695 275 790 302V493C790 672 682 813 512 880C342 813 234 672 234 493V302C329 275 424 244 512 188Z"
+    fill="#FFFFFF"
+    filter="url(#shadow)"
+  />
+  <path
+    d="M322 532H395L447 401L511 650L574 447L626 553H704"
+    fill="none"
+    stroke="url(#wave)"
+    stroke-width="58"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="322" cy="532" r="29" fill="#4338CA"/>
+  <circle cx="704" cy="553" r="29" fill="#1473E6"/>
+</svg>

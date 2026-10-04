@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-08-08T17:28:52.955749+00:00",
+  "status": "production_bundle_ready_internal_benchmarks",
+  "default_mode": "universal_v3",
+  "modes": {
+    "universal_v3": {
+      "checkpoint": "/workspace/vox_rescue_clean/checkpoints/production/v3/vox_rescue_universal_v3_step7000.pt",
+      "sha256": "301b15ed9328c91c19717c1a1265681bff3de56f95f00622392ff2c62b267f0a",
+      "step": 7000,
+      "purpose": "default natural denoise, clarity, hard-noise and reverb",
+      "benchmarks": {
+        "dns_normal": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.1850674053033199,
+          "delta_stoi_vs_5k": 0.002192018206747526,
+          "delta_pesq_wb_vs_5k": 0.00893493990103389
+        },
+        "dns_hard": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": -0.03768490285923143,
+          "delta_stoi_vs_5k": 0.0009704036839047747,
+          "delta_pesq_wb_vs_5k": -0.013012272616227394
+        },
+        "dns_reverb": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.3769946303218603,
+          "delta_stoi_vs_5k": 0.009519337371966863,
+          "delta_pesq_wb_vs_5k": 0.012559014062086593
+        },
+        "dns_interferer": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.15973550702134887,
+          "delta_stoi_vs_5k": 0.004882712248975629,
+          "delta_pesq_wb_vs_5k": -0.0031844091912112127
+        },
+        "hindi_normal": {
+          "samples": 24,
+          "delta_si_sdr_db_vs_5k": 0.29761914412180523,
+          "delta_stoi_vs_5k": 0.003663214654384128,
+          "delta_pesq_wb_vs_5k": 0.07200511793295528
+        },
+        "hindi_hard": {
+          "samples": 24,
+          "delta_si_sdr_db_vs_5k": 0.12718139092127423,
+          "delta_stoi_vs_5k": 0.00349236467768943,
+          "delta_pesq_wb_vs_5k": 0.049019649624824524
+        },
+        "hindi_clean": {
+          "samples": 24,
+          "delta_si_sdr_db_vs_5k": 3.9702471892038993,
+          "delta_stoi_vs_5k": 0.0036355856890707416,
+          "delta_pesq_wb_vs_5k": 0.20459194978078266
+        },
+        "hindi_interferer": {
+          "samples": 24,
+          "delta_si_sdr_db_vs_5k": 0.566187123457591,
+          "delta_stoi_vs_5k": 0.012032906137412258,
+          "delta_pesq_wb_vs_5k": 0.021178200840950012
+        }
+      }
+    },
+    "voice_isolation_v3": {
+      "checkpoint": "/workspace/vox_rescue_clean/checkpoints/production/v3/vox_rescue_voice_isolation_v3_step7250.pt",
+      "sha256": "adb0e62e7c688d2a9786f360c112867b960d93af090892baaa8c5d5eea5ba1c9",
+      "step": 7250,
+      "purpose": "aggressive competing-speaker and background-voice suppression",
+      "benchmarks": {
+        "dns_normal": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.11477284878492355,
+          "delta_stoi_vs_5k": -0.00019471162983897283,
+          "delta_pesq_wb_vs_5k": -0.002724082519610871
+        },
+        "dns_hard": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.006070555653423071,
+          "delta_stoi_vs_5k": -0.0023350694917433357,
+          "delta_pesq_wb_vs_5k": -0.018964045991500145
+        },
+        "dns_reverb": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.18086317740380764,
+          "delta_stoi_vs_5k": 0.002192935470435864,
+          "delta_pesq_wb_vs_5k": -0.0009520227710406726
+        },
+        "dns_interferer": {
+          "samples": 96,
+          "delta_si_sdr_db_vs_5k": 0.25138858892023563,
+          "delta_stoi_vs_5k": 0.0012990538059076684,
+          "delta_pesq_wb_vs_5k": 0.016624050835768234
+        }
+      }
+    }
+  },
+  "legacy": {
+    "step_5000_sha256": "c3246ebff189bd53109a219de122e5836fb2d2640d1b543e8bca8c52c17acda7",
+    "step_6500_sha256": "eaad8d5da04b00429c163dd0e277744801b8195b93f7e68d02a5dd3c48f8d31d"
+  },
+  "training_data_policy": {
+    "commercial": [
+      "DNS5",
+      "VCTK",
+      "MUSAN",
+      "RIRS_NOISES",
+      "IndicVoices-R"
+    ],
+    "excluded": [
+      "EARS:CC-BY-NC-4.0"
+    ]
+  },
+  "claim_policy": "Do not claim superiority to an external product without matched external outputs."
+}

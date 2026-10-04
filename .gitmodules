@@ -1,0 +1,3 @@
+[submodule "windows/driver-samples/wil"]
+    path = windows/driver-samples/wil
+    url = https://github.com/microsoft/wil.git

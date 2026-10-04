@@ -1,0 +1,3 @@
+noisy_path,clean_path,split
+# /mounted/dataset/noisy/example.wav,/mounted/dataset/clean/example.wav,train
+

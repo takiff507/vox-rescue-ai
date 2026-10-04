@@ -1,0 +1,16 @@
+{
+  "name": "Vox Rescue AI",
+  "short_name": "Vox Rescue",
+  "description": "Real-time on-device AI voice clarity for Windows.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#6550ad",
+  "icons": [
+    {
+      "src": "assets/vox-rescue-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

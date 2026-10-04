@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.VisualStudio.DSC/VSComponents
+      id: vsDriverComponents
+      directives:
+        description: Install the Visual Studio components required by the Windows Driver Kit
+      settings:
+        productId: Microsoft.VisualStudio.Product.Community
+        channelId: VisualStudio.18.Release
+        includeRecommended: false
+        components:
+          - Component.Microsoft.Windows.DriverKit
+          - Microsoft.Component.MSBuild
+          - Microsoft.VisualStudio.Component.CoreEditor
+          - Microsoft.VisualStudio.Component.DiagnosticTools
+          - Microsoft.VisualStudio.Component.Roslyn.Compiler
+          - Microsoft.VisualStudio.Component.TextTemplating
+          - Microsoft.VisualStudio.Component.VC.ATL.Spectre
+          - Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre
+          - Microsoft.VisualStudio.Component.VC.CoreIde
+          - Microsoft.VisualStudio.Component.VC.Redist.14.Latest
+          - Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre
+          - Microsoft.VisualStudio.Component.VC.Tools.x86.x64
+          - Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core
+          - Microsoft.VisualStudio.Workload.CoreEditor
+          - Microsoft.VisualStudio.Workload.NativeDesktop
+  configurationVersion: 0.2.1
